@@ -1,16 +1,16 @@
-# Bookstore App UI in Flutter
-Source Code - Enjoy !
+# de_mo
 
-# Most Important Social Media
-YouTube: https://www.youtube.com/channel/UCQheyq1vvmd0RaKv1EDyGfA
+A new Flutter project.
 
-I hope you liked it, and dont forget to like, subscribe, share this video with your friends, and star the repository on GitHub!
+## Getting Started
 
-# Social Media
-GitHub: https://github.com/gerfagerfa
-Facebook: https://www.facebook.com/MadeWithFlutter
-Twitter: https://twitter.com/AllAboutFlutter
-LinkedIn: https://www.linkedin.com/in/gerfagerfa
+This project is a starting point for a Flutter application.
 
-# Inspiration
-https://dribbble.com/shots/12091473-Bookstore-App
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
