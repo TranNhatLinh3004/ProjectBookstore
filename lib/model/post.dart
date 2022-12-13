@@ -43,20 +43,3 @@ class Post {
     return data;
   }
 }
-//
-// List<Books> parseBooks (String responseBody) {
-//   final parsed = json.decode(responseBody).cast<Map<String, dynamic>>();
-//   return parsed.map<Books>((json) => Books.fromJson(json)).toList();
-// }
-//
-// Future<List<Books>> fetchBooks() async{
-//   final url1 = Uri.parse('https://6382330e9842ca8d3ca3bce2.mockapi.io/api/books');
-//   final response = await http.get(url1);
-//   if(response.statusCode == 200){
-//     print("aaaaaa");
-//     print(parseBooks(response.body));
-//     return parseBooks(response.body);
-//   } else {
-//     throw Exception('Unable to fetch books from the rest API');
-//   }
-// }

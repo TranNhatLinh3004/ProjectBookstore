@@ -19,8 +19,7 @@ class _BookstoreState extends State<Bookstore> {
   List<Filter> filters = getFilterList();
   Filter selectedFilter;
 
-  // List<NavigationItem> navigationItems = getNavigationItemList();
-  // NavigationItem selectedItem;
+
 
   List<Book> books = getBookList();
   List<Author> authors = getAuthorList();
@@ -87,88 +86,7 @@ class _BookstoreState extends State<Bookstore> {
                     ),
                   ),
 
-                  // SizedBox(
-                  //   height: 5,
-                  // ),
-                  // Padding(child: Container(
-                  //   width: double.infinity,
-                  //   height: 40,
-                  //   color: Colors.white,
-                  //   child: const Center(
-                  //     child: TextField(
-                  //       decoration: InputDecoration(
-                  //           hintText: 'Search for something',
-                  //           prefixIcon: Icon(Icons.search),
-                  //           suffixIcon: Icon(Icons.camera_alt)),
-                  //     ),
-                  //   ),
-                  // ),
-                  // ),
-
-                  // Padding(
-                  //   padding: const EdgeInsets.fromLTRB(0, 5, 5, 0),
-                  //   child: Container(
-                  //     padding: EdgeInsets.only(top:0),
-                  //     height: 45,
-                  //     // width: MediaQuery.of(context).size.width * 0.755,
-                  //     decoration: BoxDecoration(
-                  //       borderRadius: BorderRadius.circular(20),
-                  //       color: Color(0xffC4C4C4),
-                  //     ),
-                  //     child: TextField(
-                  //       // obscureText: false,
-                  //
-                  //       decoration: InputDecoration(
-                  //         // border: OutlineInputBorder(
-                  //         //   borderSide: BorderSide(
-                  //         //       color: Colors.white
-                  //         //   ),
-                  //         // ),
-                  //         enabledBorder: OutlineInputBorder(
-                  //           borderSide: BorderSide(color: Colors.white),
-                  //           borderRadius: BorderRadius.circular(20),
-                  //         ),
-                  //         hintText: "Search keyboards",
-                  //         prefixIcon: Icon(Icons.search),
-                  //         // contentPadding: EdgeInsets.all(10),
-                  //       ),
-                  //     ),
-                  //   ),
-                  // ),
-                  // Form(
-                  //     key: _formKey,
-                  //     child: SearchField(
-                  //       suggestions: _statesOfIndia.map((e) =>
-                  //           SearchFieldListItem(e)).toList(),
-                  //       suggestionState: Suggestion.expand,
-                  //       textInputAction: TextInputAction.next,
-                  //       hint: 'SearchField Example 2',
-                  //       hasOverlay: false,
-                  //       searchStyle: TextStyle(
-                  //         fontSize: 18,
-                  //         color: Colors.black.withOpacity(0.8),
-                  //       ),
-                  //       validator: (x) {
-                  //         if (!_statesOfIndia.contains(x) || x!.isEmpty) {
-                  //           return 'Please Enter a valid State';
-                  //         }
-                  //         return null;
-                  //       },
-                  //       searchInputDecoration: InputDecoration(
-                  //         focusedBorder: OutlineInputBorder(
-                  //           borderSide: BorderSide(
-                  //             color: Colors.black.withOpacity(0.8),
-                  //           ),
-                  //         ),
-                  //         border: OutlineInputBorder(
-                  //           borderSide: BorderSide(color: Colors.red),
-                  //         ),
-                  //       ),
-                  //       maxSuggestionsInViewPort: 6,
-                  //       itemHeight: 50,
-                  //       onTap: (x) {},
-                  //     )
-                  // ),
+                 
                   SizedBox(
                     height: 10,
                   ),

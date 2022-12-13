@@ -35,9 +35,7 @@ class MyApp extends StatelessWidget {
 }
 
 class Profile extends StatefulWidget {
-  // const Profile({Key? key, required this.title}) : super(key: key);
-  //
-  // final String title;
+
   dynamic data;
   static const routeName = '/profile';
 

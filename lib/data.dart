@@ -2,21 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart' show ChangeNotifier;
 
 
-// class NavigationItem {
-//   IconData iconData;
-//
-//   NavigationItem(this.iconData);
-// }
-//
-// List<NavigationItem> getNavigationItemList() {
-//   return <NavigationItem>[
-//     NavigationItem(Icons.home),
-//     NavigationItem(Icons.local_library),
-//     NavigationItem(Icons.book),
-//     NavigationItem(Icons.person),
-//   ];
-// }
-
 class Book {
   String category;
   String title;
@@ -30,10 +15,6 @@ class Book {
   Book(this.category, this.title, this.description, this.author, this.score,
       this.image
   );
-  // void toggleFavoriteStatus() {
-  //   isFavorite = !isFavorite;
-  //   notifyListeners();
-  // }
 }
 
 List<Book> getBookList() {
