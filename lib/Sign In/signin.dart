@@ -1,14 +1,14 @@
 import 'dart:convert';
+import 'package:de_mo/forgotpass/forgotpassword.dart';
 import 'package:flutter/material.dart';
 import 'package:de_mo/Home/home.dart';
 import 'package:http/http.dart' as http;
 import 'package:de_mo/Register/register.dart';
 
-import '../Home/Homepage.dart';
 import '../support/support.dart';
 
 void main() async{
-  var url = Uri.parse('https://6382330e9842ca8d3ca3bce2.mockapi.io/api/users');
+  var url = Uri.parse('https://6397469486d04c7633909cbe.mockapi.io/api/v1/users');
   var rs = await http.get(url);
   var data = jsonDecode(utf8.decode(rs.bodyBytes));
   runApp(MyApp(data),
@@ -24,6 +24,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      // title: 'Flutter Demo',
+      // theme: ThemeData(
+      //
+      //   primarySwatch: Colors.blue,
+      // ),
       home:  SignIn(data),
     );
   }
@@ -58,9 +63,17 @@ class _MyHomePageState extends State<SignIn> {
           title: const Text("Login"),
           content: Text("Login failed, Account does not exist"),
           actions: [
-            TextButton(onPressed: (){
+            TextButton
+              (onPressed: (){
+              // Navigator.pop(context, "OK");
+              Navigator.push(context, MaterialPageRoute(builder: (context) => Register(data)));
+              }, child: Text("Register")),
+            SizedBox(
+              width: 130,
+            ),
+            TextButton (onPressed: (){
               Navigator.pop(context, "OK");
-            }, child: Text("Ok"))
+            }, child: Text("Ok")),
           ],
         )
     );
@@ -82,7 +95,7 @@ class _MyHomePageState extends State<SignIn> {
         PopupMenuItem<String>(
             child: const Text('Phản hồi'), value: '2'),
       ],
-    ).then<void>((itemSelected) async {
+    ).then<void>((itemSelected) {
       if (itemSelected == null) return;
       if(itemSelected == "1"){
         Navigator.push(context, MaterialPageRoute(builder: (context) => Support()));
@@ -119,8 +132,7 @@ class _MyHomePageState extends State<SignIn> {
                               icon: Icon(Icons.navigate_before_rounded, ),
                               color: Colors.black,
                               onPressed: () {
-                                Navigator.of(context).pushReplacementNamed(Home.routeName);
-
+                                Navigator.pop(context);
                               },
                               splashRadius: 17,
                               splashColor: Colors.lightBlueAccent,
@@ -279,12 +291,24 @@ class _MyHomePageState extends State<SignIn> {
                   SizedBox(
                     height: 30,
                   ),
-                  Text(
-                    'Forgot Password',
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: Colors.grey,
-                    ),
+                  // Text(
+                  //   'Forgot Password',
+                  //   style: TextStyle(
+                  //     fontSize: 16,
+                  //     color: Colors.grey,
+                  //   ),
+                  // ),
+                  TextButton(
+                      onPressed: (){
+                        Navigator.of(context)
+                            .pushReplacementNamed(ForgotScreen.routeName);
+                      },
+                      child: Text("Register Now",
+                          style: TextStyle(
+                                fontSize: 16,
+                                color: Colors.grey,
+                              ),
+                      )
                   ),
                   SizedBox(
                     height: 30,
